@@ -1,0 +1,13 @@
+Functional
+Should have main menu
+Should have database of items
+Should have database of customers
+Checks stock
+Auto check tests
+90% test coverage
+
+Non Functional
+Personal information is confidential
+interaction should not exceed 2 seconds
+Code should have a persistent style
+Jenkins should timeout after 30 seconds
