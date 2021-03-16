@@ -14,8 +14,7 @@ public class ProductsTest {
 
     @Test
     public void testItemCreateSuccess(){
-        Products products = p1;
-        assertEquals(products, p1);
+        assertEquals(p1, p1);
     }
 
     @Test
