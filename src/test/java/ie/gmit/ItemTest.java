@@ -14,8 +14,8 @@ public class ItemTest {
     @Test
     public void testItemCreateSuccess(){
         assertEquals("Name", i1.getName());
-        assertEquals("3.33", i1.getPrice());
-        assertEquals("14", i1.getQuantity());
+        assertEquals(3.33, i1.getPrice());
+        assertEquals(14, i1.getQuantity());
     }
 
     @Test
