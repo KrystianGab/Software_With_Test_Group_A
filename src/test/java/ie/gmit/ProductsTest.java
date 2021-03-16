@@ -14,7 +14,10 @@ public class ProductsTest {
 
     @Test
     public void testItemCreateSuccess(){
-        assertEquals(p1, p1);
+        assertEquals("Name", i1.getName());
+        assertEquals(3.33, i1.getPrice());
+        assertEquals(14, i1.getQuantity());
+        assertEquals("P0254672", i1.getProductID());
     }
 
     @Test
