@@ -37,5 +37,11 @@ public class Prescription extends Item {
 <span class="fc" id="L37">            throw new IllegalArgumentException(&quot;Invalid Prescription&quot;);</span>
         }
 <span class="fc" id="L39">    }</span>
+
+
+    @Override
+    public String toString() {
+<span class="nc" id="L44">        return &quot;Item ID:&quot; + prescriptionID + &quot; &quot; + super.toString();</span>
+    }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>

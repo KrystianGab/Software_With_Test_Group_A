@@ -20,5 +20,9 @@ public class Products extends Item {
 <span class="fc" id="L20">            throw new IllegalArgumentException(&quot;Invalid Product ID&quot;);</span>
         }
 <span class="fc" id="L22">    }</span>
+
+    public String toString() {
+<span class="nc" id="L25">        return &quot;Item ID:&quot; + productID + &quot; &quot; + super.toString();</span>
+    }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>

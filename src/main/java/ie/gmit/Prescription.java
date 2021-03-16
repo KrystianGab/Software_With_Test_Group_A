@@ -37,4 +37,10 @@ public class Prescription extends Item {
             throw new IllegalArgumentException("Invalid Prescription");
         }
     }
+
+
+    @Override
+    public String toString() {
+        return "Item ID:" + prescriptionID + " " + super.toString();
+    }
 }

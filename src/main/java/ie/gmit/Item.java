@@ -49,4 +49,10 @@ public class Item {
             throw new IllegalArgumentException("Invalid Quantity");
         }
     }
+
+
+    @Override
+    public String toString() {
+        return name + " for " + price;
+    }
 }

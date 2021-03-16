@@ -20,4 +20,8 @@ public class Products extends Item {
             throw new IllegalArgumentException("Invalid Product ID");
         }
     }
+
+    public String toString() {
+        return "Item ID:" + productID + " " + super.toString();
+    }
 }
