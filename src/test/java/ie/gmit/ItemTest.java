@@ -13,8 +13,7 @@ public class ItemTest {
 
     @Test
     public void testItemCreateSuccess(){
-        Item item = i1;
-        assertEquals(item, i1);
+        assertEquals(i1, i1);
     }
 
     @Test
