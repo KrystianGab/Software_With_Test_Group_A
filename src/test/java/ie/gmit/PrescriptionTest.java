@@ -14,8 +14,7 @@ public class PrescriptionTest {
 
     @Test
     public void testItemCreateSuccess(){
-        Prescription prescription = p1;
-        assertEquals(prescription, p1);
+        assertEquals(p1, p1);
     }
 
     @Test
