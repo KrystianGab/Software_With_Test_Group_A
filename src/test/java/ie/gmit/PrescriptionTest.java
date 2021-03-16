@@ -14,11 +14,11 @@ public class PrescriptionTest {
 
     @Test
     public void testItemCreateSuccess(){
-        assertEquals("Name", i1.getName());
-        assertEquals(3.33, i1.getPrice());
-        assertEquals(14, i1.getQuantity());
-        assertEquals("D0254672", i1.getPrescriptionID());
-        assertEquals(true, i1.isPrescription());
+        assertEquals("Name", p1.getName());
+        assertEquals(3.33, p1.getPrice());
+        assertEquals(14, p1.getQuantity());
+        assertEquals("D0254672", p1.getPrescriptionID());
+        assertEquals(true, p1.isPrescription());
     }
 
     @Test

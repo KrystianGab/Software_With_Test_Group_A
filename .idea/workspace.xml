@@ -24,27 +24,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d924e7b9-fe53-417b-bbe1-06297ed1498c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ie/gmit/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ie/gmit/Item.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ie/gmit/Prescription.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ie/gmit/Prescription.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ie/gmit/Products.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ie/gmit/Products.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jacoco.exec" beforeDir="false" afterPath="$PROJECT_DIR$/target/jacoco.exec" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/ie.gmit/Item.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/ie.gmit/Item.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/ie.gmit/Item.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/ie.gmit/Item.java.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/ie.gmit/Prescription.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/ie.gmit/Prescription.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/ie.gmit/Prescription.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/ie.gmit/Prescription.java.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/ie.gmit/Products.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/ie.gmit/Products.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/ie.gmit/Products.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/ie.gmit/Products.java.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/ie.gmit/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/ie.gmit/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/ie.gmit/index.source.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/ie.gmit/index.source.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-sessions.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/jacoco-sessions.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco.csv" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/jacoco.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/jacoco.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-ie.gmit.ItemTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-ie.gmit.ItemTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-ie.gmit.PrescriptionTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-ie.gmit.PrescriptionTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-ie.gmit.ProductsTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-ie.gmit.ProductsTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/ie.gmit.ItemTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/ie.gmit.ItemTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/ie.gmit.ProductsTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/ie.gmit.ProductsTest.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +45,11 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GithubProjectSettings">
+    <option name="CREATE_PULL_REQUEST_DEFAULT_BRANCH" value="master" />
+    <option name="CREATE_PULL_REQUEST_DEFAULT_REPO_USER" value="emmettcowan" />
+    <option name="CREATE_PULL_REQUEST_DEFAULT_REPO_NAME" value="Software_With_Test_Group_A" />
+  </component>
   <component name="JupyterTrust" id="8a0c48da-45e8-4c67-b476-2c96339a0e97" />
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -86,17 +70,6 @@
     <property name="aspect.path.notification.shown" value="true" />
   </component>
   <component name="RunManager" selected="JUnit.ItemTest.testConstructorNameFail">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ItemTest.testConstructorNameFail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SoftwareWithTestGroupA" />
       <extension name="coverage">
@@ -144,7 +117,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1615879869574</updated>
-      <workItem from="1615879870647" duration="3552000" />
+      <workItem from="1615879870647" duration="4460000" />
+      <workItem from="1615899961545" duration="451000" />
     </task>
     <task id="LOCAL-00001" summary="Added Item, Prescription, Product classes and their tests">
       <created>1615882883464</created>
@@ -160,7 +134,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615882912122</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added toString methods">
+      <created>1615883576202</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1615883576202</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -176,31 +157,41 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added Item, Prescription, Product classes and their tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Item, Prescription, Product classes and their tests" />
+    <MESSAGE value="Added toString methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added toString methods" />
   </component>
   <component name="WindowStateProjectService">
     <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser" timestamp="1615880961323">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1615880961323" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1615883410451">
+    <state x="661" y="412" key="Github.CreatePullRequestDialog" timestamp="1615883731001">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1615883410451" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1615883410451">
+    <state x="661" y="412" key="Github.CreatePullRequestDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1615883731001" />
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1615890361482">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1615883410451" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1615883410451">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1615890361482" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1615890361482">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1615883410451" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1615883410451">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1615890361482" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1615890361482">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1615883410451" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1615890361482" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1615890361482">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1615890361482" />
+    <state x="790" y="311" key="svn.repositoryBrowser" timestamp="1615883612335">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="790" y="311" key="svn.repositoryBrowser/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1615883612335" />
   </component>
 </project>

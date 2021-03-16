@@ -1,5 +1,4 @@
 GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
-SoftwareWithTestGroupA,ie.gmit,temp,3,0,0,0,1,0,1,0,1,0
-SoftwareWithTestGroupA,ie.gmit,Prescription,21,42,0,4,3,13,3,5,3,3
-SoftwareWithTestGroupA,ie.gmit,Item,22,52,0,6,4,17,4,7,4,4
-SoftwareWithTestGroupA,ie.gmit,Products,18,24,0,2,2,7,2,3,2,2
+SoftwareWithTestGroupA,ie.gmit,Prescription,15,48,0,4,1,15,1,7,1,5
+SoftwareWithTestGroupA,ie.gmit,Item,13,61,0,6,1,20,1,10,1,7
+SoftwareWithTestGroupA,ie.gmit,Products,15,27,0,2,1,8,1,4,1,3
