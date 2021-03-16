@@ -11,9 +11,9 @@ public class Customer {
     public Customer(String name, String pps, String address, String email, String phone){
         setName(name);
         setPPS(pps);
-        this.Address = address;
-        this.Email = email;
-        this.Phone = phone;
+        setAddress(address);
+        setEmail(email);
+        setPhone(phone);
     }
 
     public String getName() {
@@ -39,6 +39,45 @@ public class Customer {
         }
         else{
             throw new IllegalArgumentException("invalid PPS must be 7 digits followed by a letter");
+        }
+    }
+
+    public String getAddress() {
+        return Address;
+    }
+
+    public void setAddress(String Address) {
+        if((Address.length() >= 8)){
+            this.Address = Address;
+        }
+        else{
+            throw new IllegalArgumentException("invalid Adress must be 8 digits or greater");
+        }
+    }
+
+    public String getEmail() {
+        return Email;
+    }
+
+    public void setEmail(String Email) {
+        if((Email.length() >= 8)){
+            this.Email = Email;
+        }
+        else{
+            throw new IllegalArgumentException("invalid Email must be at least 8 Charaters");
+        }
+    }
+
+    public String getPhone() {
+        return Phone;
+    }
+
+    public void setPhone(String Phone) {
+        if((Phone.length() >= 7)){
+            this.Phone = Phone;
+        }
+        else{
+            throw new IllegalArgumentException("invalid Phone must be at least 7 digits");
         }
     }
 }

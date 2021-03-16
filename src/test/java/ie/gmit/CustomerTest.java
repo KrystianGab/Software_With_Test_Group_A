@@ -21,7 +21,7 @@ public class CustomerTest {
     }
 
     @Test
-    void testConstructorTitleFail(){
+    void testConstructorNameFail(){
         Exception e = assertThrows(IllegalArgumentException.class, ()-> new Customer("123", "123456b", "97 Rhylin Glebe", "g00354127@gmit.ie", "0892297790"));
         assertEquals("invalid Name" , e.getMessage());
     }
@@ -44,8 +44,8 @@ public class CustomerTest {
 
     @Test
     void testConstructorAddressFail(){
-        Exception e = assertThrows(IllegalArgumentException.class, ()-> new Customer("Emmett Cowan", "123456b", "123", "g00354127@gmit.ie", "0892297790"));
-        assertEquals("invalid Adress must be at least 8 Charaters", e.getMessage());
+        Exception e = assertThrows(IllegalArgumentException.class, ()-> new Customer("Emmett Cowan", "1234576b", "123", "g00354127@gmit.ie", "0892297790"));
+        assertEquals("invalid Adress must be 8 digits or greater", e.getMessage());
     }
 
     @Test
@@ -55,18 +55,18 @@ public class CustomerTest {
 
     @Test
     void testConstructorEmailFail(){
-        Exception e = assertThrows(IllegalArgumentException.class, ()-> new Customer("Emmett Cowan", "123456b", "97 Rhylin Glebe", "asdfgv", "0892297790"));
+        Exception e = assertThrows(IllegalArgumentException.class, ()-> new Customer("Emmett Cowan", "1234567b", "97 Rhylin Glebe", "asdfgv", "0892297790"));
         assertEquals("invalid Email must be at least 8 Charaters", e.getMessage());
     }
 
     @Test
     void testConstructorPhone(){
-        assertEquals(c1.getPhone() ,"g00354127@gmit.ie");
+        assertEquals(c1.getPhone() ,"0892297790");
     }
 
     @Test
     void testConstructorPhoneFail(){
-        Exception e = assertThrows(IllegalArgumentException.class, ()-> new Customer("Emmett Cowan", "123456b", "97 Rhylin Glebe", "g00354127@gmit.ie", "12345"));
+        Exception e = assertThrows(IllegalArgumentException.class, ()-> new Customer("Emmett Cowan", "1234567b", "97 Rhylin Glebe", "g00354127@gmit.ie", "12345"));
         assertEquals("invalid Phone must be at least 7 digits", e.getMessage());
     }
 
