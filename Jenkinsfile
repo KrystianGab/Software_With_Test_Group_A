@@ -1,21 +1,18 @@
 pipeline{
-	agent{
-		docker{
-			image "maven:3.6.3-jdk-11"
-		}
-	}
+	agent any
 	
 	stages { 
 		stage("Build") {
 			steps {
-				sh "mvn - version"
-				sh "mvn clean install"
+			  	bat "mvn -v"
+			  	bat "mvn clean"
+			  	bat "mvn compile"
 				echo 'Building'
 			}
 		}
 		stage("Test") {
 			steps{
-			
+				bat "mvn test"
 				echo 'Testing'
 			}
 		}
