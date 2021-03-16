@@ -69,7 +69,4 @@ public class CustomerTest {
         Exception e = assertThrows(IllegalArgumentException.class, ()-> new Customer("Emmett Cowan", "1234567b", "97 Rhylin Glebe", "g00354127@gmit.ie", "12345"));
         assertEquals("invalid Phone must be at least 7 digits", e.getMessage());
     }
-
-
-
 }
