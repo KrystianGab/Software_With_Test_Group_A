@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Item.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">SoftwareWithTestGroupA</a> &gt; <a href="index.source.html" class="el_package">ie.gmit</a> &gt; <span class="el_source">Item.java</span></div><h1>Item.java</h1><pre class="source lang-java linenums">package ie.gmit;
+
+public class Item {
+    private String name;
+    private double price;
+    private int quantity;
+
+<span class="fc" id="L8">    public Item(String name, double price, int quantity) {</span>
+<span class="fc" id="L9">        setName(name);</span>
+<span class="fc" id="L10">        setPrice(price);</span>
+<span class="fc" id="L11">        setQuantity(quantity);</span>
+<span class="fc" id="L12">    }</span>
+
+    public String getName() {
+<span class="fc" id="L15">        return name;</span>
+    }
+
+    public void setName(String name) {
+<span class="fc bfc" id="L19" title="All 2 branches covered.">        if (name.length()&gt;=3) {</span>
+<span class="fc" id="L20">            this.name = name;</span>
+        }
+        else {
+<span class="fc" id="L23">            throw new IllegalArgumentException(&quot;Invalid Name&quot;);</span>
+        }
+<span class="fc" id="L25">    }</span>
+
+    public double getPrice() {
+<span class="fc" id="L28">        return price;</span>
+    }
+
+    public void setPrice(double price) {
+<span class="fc bfc" id="L32" title="All 2 branches covered.">        if (price &gt;= 0) {</span>
+<span class="fc" id="L33">            this.price = price;</span>
+        }
+        else{
+<span class="fc" id="L36">            throw new IllegalArgumentException(&quot;Invalid Price&quot;);</span>
+        }
+<span class="fc" id="L38">    }</span>
+
+    public int getQuantity() {
+<span class="fc" id="L41">        return quantity;</span>
+    }
+
+    public void setQuantity(int quantity) {
+<span class="fc bfc" id="L45" title="All 2 branches covered.">        if (quantity &gt;0) {</span>
+<span class="fc" id="L46">            this.quantity = quantity;</span>
+        }
+        else {
+<span class="fc" id="L49">            throw new IllegalArgumentException(&quot;Invalid Quantity&quot;);</span>
+        }
+<span class="fc" id="L51">    }</span>
+
+
+    @Override
+    public String toString() {
+<span class="nc" id="L56">        return name + &quot; for &quot; + price;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>

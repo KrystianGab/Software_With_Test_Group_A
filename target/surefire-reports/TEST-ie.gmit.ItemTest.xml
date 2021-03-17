@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="ie.gmit.ItemTest" time="0.035" tests="4" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="13"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1250"/>
+    <property name="java.class.path" value="C:\SoftwareWithTest\Software_With_Test_Group_A\target\test-classes;C:\SoftwareWithTest\Software_With_Test_Group_A\target\classes;C:\Users\jestt\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.4.2\junit-jupiter-api-5.4.2.jar;C:\Users\jestt\.m2\repository\org\apiguardian\apiguardian-api\1.0.0\apiguardian-api-1.0.0.jar;C:\Users\jestt\.m2\repository\org\opentest4j\opentest4j\1.1.1\opentest4j-1.1.1.jar;C:\Users\jestt\.m2\repository\org\junit\platform\junit-platform-commons\1.4.2\junit-platform-commons-1.4.2.jar;C:\Users\jestt\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.4.2\junit-jupiter-engine-5.4.2.jar;C:\Users\jestt\.m2\repository\org\junit\platform\junit-platform-engine\1.4.2\junit-platform-engine-1.4.2.jar;"/>
+    <property name="java.vm.vendor" value="Azul Systems, Inc."/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="http://www.azulsystems.com/"/>
+    <property name="user.timezone" value="Europe/Dublin"/>
+    <property name="user.country.format" value="PL"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="13"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="GB"/>
+    <property name="sun.boot.library.path" value="C:\Users\jestt\.jdks\azul-13.0.5.1\bin"/>
+    <property name="sun.java.command" value="C:\Users\jestt\AppData\Local\Temp\surefire7552623572386705953\surefirebooter1754309938465341080.jar C:\Users\jestt\AppData\Local\Temp\surefire7552623572386705953 2021-03-16T13-15-00_140-jvmRun1 surefire18176283282802717811tmp surefire_08587924124184074392tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\SoftwareWithTest\Software_With_Test_Group_A\target\test-classes;C:\SoftwareWithTest\Software_With_Test_Group_A\target\classes;C:\Users\jestt\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.4.2\junit-jupiter-api-5.4.2.jar;C:\Users\jestt\.m2\repository\org\apiguardian\apiguardian-api\1.0.0\apiguardian-api-1.0.0.jar;C:\Users\jestt\.m2\repository\org\opentest4j\opentest4j\1.1.1\opentest4j-1.1.1.jar;C:\Users\jestt\.m2\repository\org\junit\platform\junit-platform-commons\1.4.2\junit-platform-commons-1.4.2.jar;C:\Users\jestt\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.4.2\junit-jupiter-engine-5.4.2.jar;C:\Users\jestt\.m2\repository\org\junit\platform\junit-platform-engine\1.4.2\junit-platform-engine-1.4.2.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\jestt"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2020-11-06"/>
+    <property name="java.home" value="C:\Users\jestt\.jdks\azul-13.0.5.1"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\SoftwareWithTest\Software_With_Test_Group_A"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="jdk.vendor.version" value="Zulu13.35+51-CA"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\jestt\AppData\Local\Temp\surefire7552623572386705953\surefirebooter1754309938465341080.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="13.0.5.1+1-MTS"/>
+    <property name="user.name" value="jestt"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="Cp1250"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Zulu13.35+51-CA"/>
+    <property name="localRepository" value="C:\Users\jestt\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="http://www.azulsystems.com/support/"/>
+    <property name="java.io.tmpdir" value="C:\Users\jestt\AppData\Local\Temp\"/>
+    <property name="idea.version" value="2020.2.2"/>
+    <property name="java.version" value="13.0.5.1"/>
+    <property name="user.dir" value="C:\SoftwareWithTest\Software_With_Test_Group_A"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.language.format" value="pl"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Users\jestt\.jdks\azul-13.0.5.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Python27\;C:\Python27\Scripts;C:\ProgramData\Boxstarter;C:\Program Files\Oculus\Support\oculus-runtime;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;E:\Program Files\Git\cmd;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\nodejs\installs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;E:\Program Files\Git\bin;D:\Maven\apache-maven-3.6.3\bin;C:\Program Files\Docker\Docker;C:\Users\jestt\AppData\Local\Microsoft\WindowsApps;C:\Users\jestt\AppData\Local\atom\bin;C:\Users\jestt\AppData\Roaming\npm;D:\Maven\apache-maven-3.6.3\bin;;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Azul Systems, Inc."/>
+    <property name="java.vm.version" value="13.0.5.1+1-MTS"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="57.0"/>
+  </properties>
+  <testcase name="testConstructorPriceFail" classname="ie.gmit.ItemTest" time="0.019"/>
+  <testcase name="testItemCreateSuccess" classname="ie.gmit.ItemTest" time="0"/>
+  <testcase name="testConstructorQuantityFail" classname="ie.gmit.ItemTest" time="0"/>
+  <testcase name="testConstructorNameFail" classname="ie.gmit.ItemTest" time="0"/>
+</testsuite>
