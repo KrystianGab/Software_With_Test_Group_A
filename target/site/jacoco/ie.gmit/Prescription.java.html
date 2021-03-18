@@ -3,45 +3,52 @@
 public class Prescription extends Item {
     private String prescriptionID;
     private boolean prescription;
+<span class="fc" id="L6">    private int prescriptionCount =0;</span>
+
+    public Prescription(String name){
+<span class="fc" id="L9">        super(name);</span>
+<span class="fc" id="L10">    }</span>
 
     public Prescription(String name, double price, int quantity, String prescriptionID, boolean prescription) {
-<span class="fc" id="L8">        super(name, price, quantity);</span>
-<span class="fc" id="L9">        setPrescriptionID(prescriptionID);</span>
-<span class="fc" id="L10">        setPrescription(prescription);</span>
-<span class="fc" id="L11">    }</span>
+<span class="fc" id="L13">        super(name, price, quantity);</span>
+<span class="fc" id="L14">        setPrescriptionID(prescriptionID);</span>
+<span class="fc" id="L15">        setPrescription(prescription);</span>
+<span class="fc" id="L16">        prescriptionCount++;</span>
+<span class="fc" id="L17">    }</span>
 
     public String getPrescriptionID() {
-<span class="fc" id="L14">        return prescriptionID;</span>
+<span class="fc" id="L20">        return prescriptionID;</span>
     }
 
     public void setPrescriptionID(String prescriptionID) {
-<span class="fc" id="L18">        this.prescriptionID = prescriptionID;</span>
+<span class="fc" id="L24">        this.prescriptionID = prescriptionID;</span>
 
-<span class="fc bfc" id="L20" title="All 2 branches covered.">        if(prescriptionID.charAt(0)=='D') {</span>
-<span class="fc" id="L21">            this.prescriptionID = prescriptionID;</span>
+<span class="fc bfc" id="L26" title="All 2 branches covered.">        if(prescriptionID.charAt(0)=='D') {</span>
+<span class="fc" id="L27">            this.prescriptionID = prescriptionID;</span>
         }
         else{
-<span class="fc" id="L24">            throw new IllegalArgumentException(&quot;Invalid Prescription ID&quot;);</span>
+<span class="fc" id="L30">            throw new IllegalArgumentException(&quot;Invalid Prescription ID&quot;);</span>
         }
-<span class="fc" id="L26">    }</span>
+<span class="fc" id="L32">    }</span>
 
     public boolean isPrescription() {
-<span class="fc" id="L29">        return prescription;</span>
+<span class="fc" id="L35">        return prescription;</span>
     }
 
     public void setPrescription(boolean prescription) {
-<span class="fc bfc" id="L33" title="All 2 branches covered.">        if(prescription) {</span>
-<span class="fc" id="L34">            this.prescription = prescription;</span>
+<span class="pc bpc" id="L39" title="1 of 4 branches missed.">        if(prescription &amp;&amp; (prescriptionCount&lt;=3)) {</span>
+<span class="fc" id="L40">            this.prescription = prescription;</span>
         }
         else{
-<span class="fc" id="L37">            throw new IllegalArgumentException(&quot;Invalid Prescription&quot;);</span>
+<span class="fc" id="L43">            throw new IllegalArgumentException(&quot;Invalid Prescription&quot;);</span>
         }
-<span class="fc" id="L39">    }</span>
-
+<span class="fc" id="L45">    }</span>
 
     @Override
     public String toString() {
-<span class="nc" id="L44">        return &quot;Item ID:&quot; + prescriptionID + &quot; &quot; + super.toString();</span>
+<span class="nc" id="L49">        return &quot;Item ID:&quot; + prescriptionID + &quot; &quot; + super.toString();</span>
     }
+
+<span class="nc" id="L52">    public int getPrescriptionCount(){return prescriptionCount;}</span>
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>

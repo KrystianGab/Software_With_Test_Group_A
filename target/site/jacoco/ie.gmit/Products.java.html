@@ -2,27 +2,46 @@
 
 public class Products extends Item {
     private String productID;
+    private String productShelf;
 
-    public Products(String name, double price, int quantity, String productID) {
-<span class="fc" id="L7">        super(name, price, quantity);</span>
-<span class="fc" id="L8">        setProductID(productID);</span>
+    public Products(String name){
+<span class="fc" id="L8">        super(name);</span>
 <span class="fc" id="L9">    }</span>
 
+    public Products(String name, double price, int quantity, String productID, String productShelf) {
+<span class="fc" id="L12">        super(name, price, quantity);</span>
+<span class="fc" id="L13">        setProductID(productID);</span>
+<span class="fc" id="L14">        setProductShelf(productShelf);</span>
+<span class="fc" id="L15">    }</span>
+
     public String getProductID() {
-<span class="fc" id="L12">        return productID;</span>
+<span class="fc" id="L18">        return productID;</span>
     }
 
     public void setProductID(String productID) {
-<span class="fc bfc" id="L16" title="All 2 branches covered.">        if (productID.charAt(0)=='P') {</span>
-<span class="fc" id="L17">            this.productID = productID;</span>
+<span class="fc bfc" id="L22" title="All 2 branches covered.">        if (productID.charAt(0)=='P') {</span>
+<span class="fc" id="L23">            this.productID = productID;</span>
         }
         else {
-<span class="fc" id="L20">            throw new IllegalArgumentException(&quot;Invalid Product ID&quot;);</span>
+<span class="fc" id="L26">            throw new IllegalArgumentException(&quot;Invalid Product ID&quot;);</span>
         }
-<span class="fc" id="L22">    }</span>
+<span class="fc" id="L28">    }</span>
+
+    public String getProductShelf() {
+<span class="fc" id="L31">        return productShelf;</span>
+    }
+
+    public void setProductShelf(String productShelf) {
+<span class="fc bfc" id="L35" title="All 2 branches covered.">        if (productShelf.length()&lt;=3) {</span>
+<span class="fc" id="L36">            this.productShelf = productShelf;</span>
+        }
+        else{
+<span class="fc" id="L39">            throw new IllegalArgumentException(&quot;Invalid Shelf Number&quot;);</span>
+        }
+<span class="fc" id="L41">    }</span>
 
     public String toString() {
-<span class="nc" id="L25">        return &quot;Item ID:&quot; + productID + &quot; &quot; + super.toString();</span>
+<span class="nc" id="L44">        return &quot;Item ID:&quot; + productID + &quot; &quot; + super.toString() + &quot; Shelf: &quot;+productShelf;</span>
     }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>
