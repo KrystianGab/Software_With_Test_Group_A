@@ -11,49 +11,53 @@ public class Item {
 <span class="fc" id="L11">        setQuantity(quantity);</span>
 <span class="fc" id="L12">    }</span>
 
+<span class="fc" id="L14">    public Item(String name) {</span>
+<span class="fc" id="L15">        setName(name);</span>
+<span class="fc" id="L16">    }</span>
+
     public String getName() {
-<span class="fc" id="L15">        return name;</span>
+<span class="fc" id="L19">        return name;</span>
     }
 
     public void setName(String name) {
-<span class="fc bfc" id="L19" title="All 2 branches covered.">        if (name.length()&gt;=3) {</span>
-<span class="fc" id="L20">            this.name = name;</span>
+<span class="fc bfc" id="L23" title="All 2 branches covered.">        if (name.length()&gt;=3) {</span>
+<span class="fc" id="L24">            this.name = name;</span>
         }
         else {
-<span class="fc" id="L23">            throw new IllegalArgumentException(&quot;Invalid Name&quot;);</span>
+<span class="fc" id="L27">            throw new IllegalArgumentException(&quot;Invalid Name&quot;);</span>
         }
-<span class="fc" id="L25">    }</span>
+<span class="fc" id="L29">    }</span>
 
     public double getPrice() {
-<span class="fc" id="L28">        return price;</span>
+<span class="fc" id="L32">        return price;</span>
     }
 
     public void setPrice(double price) {
-<span class="fc bfc" id="L32" title="All 2 branches covered.">        if (price &gt;= 0) {</span>
-<span class="fc" id="L33">            this.price = price;</span>
+<span class="fc bfc" id="L36" title="All 2 branches covered.">        if (price &gt;= 0) {</span>
+<span class="fc" id="L37">            this.price = price;</span>
         }
         else{
-<span class="fc" id="L36">            throw new IllegalArgumentException(&quot;Invalid Price&quot;);</span>
+<span class="fc" id="L40">            throw new IllegalArgumentException(&quot;Invalid Price&quot;);</span>
         }
-<span class="fc" id="L38">    }</span>
+<span class="fc" id="L42">    }</span>
 
     public int getQuantity() {
-<span class="fc" id="L41">        return quantity;</span>
+<span class="fc" id="L45">        return quantity;</span>
     }
 
     public void setQuantity(int quantity) {
-<span class="fc bfc" id="L45" title="All 2 branches covered.">        if (quantity &gt;0) {</span>
-<span class="fc" id="L46">            this.quantity = quantity;</span>
+<span class="fc bfc" id="L49" title="All 2 branches covered.">        if (quantity &gt;0) {</span>
+<span class="fc" id="L50">            this.quantity = quantity;</span>
         }
         else {
-<span class="fc" id="L49">            throw new IllegalArgumentException(&quot;Invalid Quantity&quot;);</span>
+<span class="fc" id="L53">            throw new IllegalArgumentException(&quot;Invalid Quantity&quot;);</span>
         }
-<span class="fc" id="L51">    }</span>
+<span class="fc" id="L55">    }</span>
 
 
     @Override
     public String toString() {
-<span class="nc" id="L56">        return name + &quot; for &quot; + price;</span>
+<span class="nc" id="L60">        return name + &quot; for &quot; + price;</span>
     }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="ie.gmit.ProductsTest" time="0.01" tests="5" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="ie.gmit.ProductsTest" time="0.013" tests="8" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="13"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -16,7 +16,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="GB"/>
     <property name="sun.boot.library.path" value="C:\Users\jestt\.jdks\azul-13.0.5.1\bin"/>
-    <property name="sun.java.command" value="C:\Users\jestt\AppData\Local\Temp\surefire7552623572386705953\surefirebooter1754309938465341080.jar C:\Users\jestt\AppData\Local\Temp\surefire7552623572386705953 2021-03-16T13-15-00_140-jvmRun1 surefire18176283282802717811tmp surefire_08587924124184074392tmp"/>
+    <property name="sun.java.command" value="C:\Users\jestt\AppData\Local\Temp\surefire12678440162243839340\surefirebooter5056098363490504836.jar C:\Users\jestt\AppData\Local\Temp\surefire12678440162243839340 2021-03-18T10-23-07_716-jvmRun1 surefire9322145333743549577tmp surefire_09134537947221162526tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\SoftwareWithTest\Software_With_Test_Group_A\target\test-classes;C:\SoftwareWithTest\Software_With_Test_Group_A\target\classes;C:\Users\jestt\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.4.2\junit-jupiter-api-5.4.2.jar;C:\Users\jestt\.m2\repository\org\apiguardian\apiguardian-api\1.0.0\apiguardian-api-1.0.0.jar;C:\Users\jestt\.m2\repository\org\opentest4j\opentest4j\1.1.1\opentest4j-1.1.1.jar;C:\Users\jestt\.m2\repository\org\junit\platform\junit-platform-commons\1.4.2\junit-platform-commons-1.4.2.jar;C:\Users\jestt\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.4.2\junit-jupiter-engine-5.4.2.jar;C:\Users\jestt\.m2\repository\org\junit\platform\junit-platform-engine\1.4.2\junit-platform-engine-1.4.2.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -32,7 +32,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="jdk.vendor.version" value="Zulu13.35+51-CA"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\jestt\AppData\Local\Temp\surefire7552623572386705953\surefirebooter1754309938465341080.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\jestt\AppData\Local\Temp\surefire12678440162243839340\surefirebooter5056098363490504836.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="13.0.5.1+1-MTS"/>
@@ -60,9 +60,12 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="57.0"/>
   </properties>
-  <testcase name="testConstructorPriceFail" classname="ie.gmit.ProductsTest" time="0.001"/>
-  <testcase name="testItemCreateSuccess" classname="ie.gmit.ProductsTest" time="0"/>
+  <testcase name="testConstructorPriceFail" classname="ie.gmit.ProductsTest" time="0.003"/>
+  <testcase name="testConstructorProductShelfFail" classname="ie.gmit.ProductsTest" time="0.001"/>
   <testcase name="testConstructorProductIDFail" classname="ie.gmit.ProductsTest" time="0.001"/>
-  <testcase name="testConstructorQuantityFail" classname="ie.gmit.ProductsTest" time="0.002"/>
+  <testcase name="testProductsCreateNameOnlySuccess" classname="ie.gmit.ProductsTest" time="0.001"/>
+  <testcase name="testProductsCreateNameOnlyFail" classname="ie.gmit.ProductsTest" time="0.001"/>
+  <testcase name="testProductsCreateSuccess" classname="ie.gmit.ProductsTest" time="0.001"/>
+  <testcase name="testConstructorQuantityFail" classname="ie.gmit.ProductsTest" time="0.001"/>
   <testcase name="testConstructorNameFail" classname="ie.gmit.ProductsTest" time="0.001"/>
 </testsuite>
