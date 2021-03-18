@@ -11,6 +11,10 @@ public class Item {
         setQuantity(quantity);
     }
 
+    public Item(String name) {
+        setName(name);
+    }
+
     public String getName() {
         return name;
     }
