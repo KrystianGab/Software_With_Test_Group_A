@@ -1,5 +1,8 @@
 package ie.gmit;
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 public class Customer {
 
     private String Name;
@@ -21,10 +24,12 @@ public class Customer {
     }
 
     public void setName(String name) {
-        if((name.length() >= 6)){
+        Pattern pattern = Pattern.compile("([A-Za-z])");
+        Matcher matcher = pattern.matcher(name);
+        boolean matchFound = matcher.find();
+        if(matchFound) {
             this.Name = name;
-        }
-        else{
+        } else {
             throw new IllegalArgumentException("invalid Name");
         }
     }
@@ -34,10 +39,12 @@ public class Customer {
     }
 
     public void setPPS(String PPS) {
-        if((PPS.length() == 8)){
+        Pattern pattern = Pattern.compile("([0-9]{7})([A-Za-z]{1})");
+        Matcher matcher = pattern.matcher(PPS);
+        boolean matchFound = matcher.find();
+        if(matchFound) {
             this.PPS = PPS;
-        }
-        else{
+        } else {
             throw new IllegalArgumentException("invalid PPS must be 7 digits followed by a letter");
         }
     }
@@ -60,11 +67,10 @@ public class Customer {
     }
 
     public void setEmail(String Email) {
-        if((Email.length() >= 8)){
+        if(Email.contains("@")) {
             this.Email = Email;
-        }
-        else{
-            throw new IllegalArgumentException("invalid Email must be at least 8 Charaters");
+        } else {
+            throw new IllegalArgumentException("invalid Email Format");
         }
     }
 
