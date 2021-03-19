@@ -15,10 +15,25 @@ public class CustomerList {
     }
 
     public void addCustomer(Customer c1){
-
+        for(int i = 0; i < Customers.size(); i++){
+            if(Customers.get(i).getName() == c1.getName()){
+                throw new IllegalArgumentException("Customer Already in list");
+            }
+        }
+        Customers.add(c1);
     }
 
     public void removeCustomer(Customer c1){
+        boolean exists = false;
+        for(int i = 0; i < Customers.size(); i++){
+            if(Customers.get(i).getName() == c1.getName()){
+                Customers.remove(i);
+                exists = true;
+            }
+        }
+        if(!exists){
+            throw new IllegalArgumentException("Customer not in List");
+        }
 
     }
 
