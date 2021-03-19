@@ -10,5 +10,16 @@ public class CustomerList {
         Customers = new ArrayList<Customer>();
     }
 
+    public int size(){
+        return  Customers.size();
+    }
+
+    public void addCustomer(Customer c1){
+
+    }
+
+    public void removeCustomer(Customer c1){
+
+    }
 
 }
