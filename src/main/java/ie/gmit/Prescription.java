@@ -5,8 +5,7 @@ public class Prescription extends Item {
     private boolean prescription;
     private int prescriptionCount =0;
 
-    public Prescription(String name){
-        super(name);
+    public Prescription(){
     }
 
     public Prescription(String name, double price, int quantity, String prescriptionID, boolean prescription) {

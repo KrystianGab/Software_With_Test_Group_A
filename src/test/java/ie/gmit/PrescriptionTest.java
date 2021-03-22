@@ -12,7 +12,7 @@ public class PrescriptionTest {
     @BeforeEach
     void init(){
         p1 = new Prescription("Name", 3.33, 14, "D0254672", true);
-        p2 = new Prescription("Name2");
+        p2 = new Prescription();
     }
 
     @Test
@@ -24,17 +24,6 @@ public class PrescriptionTest {
         assertEquals(true, p1.isPrescription());
     }
 
-    @Test
-    public void testPrescriptionCreateNameOnlySuccess() {
-        assertEquals("Name2", p2.getName());
-    }
-
-    @Test
-    public void testPrescriptionCreateNameOnlyFail(){
-        Exception e = assertThrows(IllegalArgumentException.class, () ->
-                new Products("A"));
-        assertEquals("Invalid Name", e.getMessage());
-    }
 
     @Test
     public void testConstructorNameFail(){
