@@ -4,9 +4,7 @@ public class Products extends Item {
     private String productID;
     private String productShelf;
 
-    public Products(String name){
-        super(name);
-    }
+    public Products(){}
 
     public Products(String name, double price, int quantity, String productID, String productShelf) {
         super(name, price, quantity);

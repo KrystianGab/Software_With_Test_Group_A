@@ -11,8 +11,9 @@ public class ProductsTest {
 
     @BeforeEach
     void init(){
+
         p1 = new Products("Name", 3.33, 14, "P0254672", "A02");
-        p2 = new Products("Name2");
+        p2 = new Products();
     }
 
     @Test
@@ -22,18 +23,6 @@ public class ProductsTest {
         assertEquals(14, p1.getQuantity());
         assertEquals("P0254672", p1.getProductID());
         assertEquals("A02", p1.getProductShelf());
-    }
-
-    @Test
-    public void testProductsCreateNameOnlySuccess(){
-        assertEquals("Name2", p2.getName());
-    }
-
-    @Test
-    public void testProductsCreateNameOnlyFail(){
-        Exception e = assertThrows(IllegalArgumentException.class, () ->
-                new Products("A"));
-        assertEquals("Invalid Name", e.getMessage());
     }
 
     @Test
