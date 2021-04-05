@@ -73,4 +73,17 @@ public class CustomerListTest {
         Exception e = assertThrows(IllegalArgumentException.class, ()-> customers.removeCustomer(c1));
         assertEquals("Customer not in List", e.getMessage());
     }
+
+    @Test
+    void testGet(){
+        customers.addCustomer(c1);
+        assertEquals(customers.get(0) , c1 );
+    }
+
+    @Test
+    void testGetFail(){
+        customers.addCustomer(c1);
+        Exception e = assertThrows(IllegalArgumentException.class, ()-> customers.get(2));
+        assertEquals("Customer Index wrong", e.getMessage());
+    }
 }

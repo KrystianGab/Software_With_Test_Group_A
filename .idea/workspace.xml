@@ -23,7 +23,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d924e7b9-fe53-417b-bbe1-06297ed1498c" name="Default Changelist" comment="added Tests for all methods">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ie/gmit/FileHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ie/gmit/FileHandlerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ie/gmit/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ie/gmit/Customer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ie/gmit/CustomerList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ie/gmit/CustomerList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ie/gmit/CustomerListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ie/gmit/CustomerListTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/jacoco.exec" beforeDir="false" afterPath="$PROJECT_DIR$/target/jacoco.exec" afterDir="false" />
@@ -93,7 +97,13 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/ie/gmit" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Emmett\OneDrive - GMIT\4th year\software &amp; test\Group_A_Proejct\Software_With_Test_Group_A\src\main\java\ie\gmit" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -112,7 +122,7 @@
       <module name="SoftwareWithTestGroupA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ie.gmit.*" />
+          <option name="PATTERN" value=".*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -128,7 +138,7 @@
       <module name="SoftwareWithTestGroupA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ie.gmit.*" />
+          <option name="PATTERN" value=".*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -165,6 +175,9 @@
       <workItem from="1616059470905" duration="3372000" />
       <workItem from="1616149143913" duration="174000" />
       <workItem from="1616149333167" duration="2662000" />
+      <workItem from="1616152338419" duration="53000" />
+      <workItem from="1616154817057" duration="10000" />
+      <workItem from="1617629378695" duration="4304000" />
     </task>
     <task id="LOCAL-00001" summary="Added Item, Prescription, Product classes and their tests">
       <created>1615882883464</created>

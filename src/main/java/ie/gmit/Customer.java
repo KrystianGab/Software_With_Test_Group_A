@@ -1,9 +1,10 @@
 package ie.gmit;
 
+import java.io.Serializable;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class Customer {
+public class Customer implements Serializable {
 
     private String Name;
     private  String PPS;
@@ -85,5 +86,11 @@ public class Customer {
         else{
             throw new IllegalArgumentException("invalid Phone must be at least 7 digits");
         }
+    }
+
+    @Override
+    public String toString() {
+        return "Name='" + Name + ", PPS='" + PPS + ", Address='" + Address +
+                ", Email='" + Email + ", Phone='" + Phone ;
     }
 }

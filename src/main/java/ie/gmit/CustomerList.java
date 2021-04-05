@@ -1,8 +1,9 @@
 package ie.gmit;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class CustomerList {
+public class CustomerList implements Serializable {
 
     private ArrayList<Customer> Customers;
 
@@ -35,6 +36,19 @@ public class CustomerList {
             throw new IllegalArgumentException("Customer not in List");
         }
 
+    }
+
+    public Customer get(int counter) {
+        boolean exists = false;
+        for(int i = 0; i < Customers.size(); i++){
+            if(counter  <= Customers.size()){
+                exists = true;
+            }
+        }
+        if(!exists){
+            throw new IllegalArgumentException("Customer Index wrong");
+        }
+        return Customers.get(counter);
     }
 
 }
