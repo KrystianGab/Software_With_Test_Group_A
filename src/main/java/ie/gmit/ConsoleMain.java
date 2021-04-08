@@ -9,7 +9,7 @@ public class ConsoleMain {
             public void run() {
                 ConsoleFrame newFrame = new ConsoleFrame();
                 newFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-                newFrame.setSize(400, 150);
+                newFrame.setSize(375, 225);
                 newFrame.setVisible(true);
             }
         });
