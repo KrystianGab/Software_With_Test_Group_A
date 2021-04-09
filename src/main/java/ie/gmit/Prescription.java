@@ -1,6 +1,6 @@
 package ie.gmit;
 
-public class Prescription extends Item {
+public class Prescription extends Item implements Printable {
     private String prescriptionID;
     private boolean prescription;
     private int prescriptionCount =0;

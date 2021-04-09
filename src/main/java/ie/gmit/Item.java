@@ -1,6 +1,6 @@
 package ie.gmit;
 
-public class Item {
+public class Item implements Printable{
     private String name;
     private double price;
     private int quantity;

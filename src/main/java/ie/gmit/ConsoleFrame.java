@@ -133,16 +133,19 @@ public class ConsoleFrame extends JFrame {
                 returnPrescription.setVisible(false);
             }
             if(e.getSource() == addDetails) {
-                Customer newCustomer = new Customer(textField1.getText(), pps.getText(), address.getText(), email.getText(), phone.getText());
-                CustomerList customers = new CustomerList();
-                FileHandler fh = new FileHandler();
+                try {
+                    Customer newCustomer = new Customer(textField1.getText(), pps.getText(), address.getText(), email.getText(), phone.getText());
+                    CustomerList customers = new CustomerList();
+                    FileHandler fh = new FileHandler();
 
-                customers = fh.read(); //reads current file
-                customers.addCustomer(newCustomer); //adds new customer to ist
-                fh.save(customers); // saves new list
-
+                    customers = fh.read(); //reads current file
+                    customers.addCustomer(newCustomer); //adds new customer to ist
+                    fh.save(customers); // saves new list
+                }
+                catch(Exception ex) {
+                    textField1.setText(ex.getMessage());
+                }
                 textField1.setEditable(false);
-                textField1.setText("Your information has been added to the list!");
                 pps.setVisible(false);
                 address.setVisible(false);
                 email.setVisible(false);
@@ -184,9 +187,13 @@ public class ConsoleFrame extends JFrame {
 
     private void returnInventory() {
         String itemName = textField1.getText();
-        Item returnedItem = InventoryDB.getInventory(itemName);
-        textField1.setText(returnedItem.toString());
+        try {
+            Printable printable = InventoryDB.getInventory(itemName);
+            textField1.setText(printable.toString());
+        }
+        catch(Exception e) {
+            textField1.setText(e.getMessage());
+        }
         textField1.setEditable(false);
     }
-
 }
