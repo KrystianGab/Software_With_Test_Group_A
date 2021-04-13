@@ -3,7 +3,7 @@ package ie.gmit;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class InventoryDB implements Printable{
+public class InventoryDB {
 
     public static Item getInventory(String itemName) {
 
