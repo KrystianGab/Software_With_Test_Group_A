@@ -177,7 +177,7 @@ public class ConsoleFrame extends JFrame {
 
     private void setInventoryCheckScreen() {
         textField1.setText("");
-        textField1.setColumns(25);
+        textField1.setColumns(35);
         textField1.setEditable(true);
         findItem.setVisible(false);
         pickUpPrescription.setVisible(false);
