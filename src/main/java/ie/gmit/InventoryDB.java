@@ -52,7 +52,6 @@ public class InventoryDB implements Printable{
                     prescription.setPrice(4.75);
                     prescription.setQuantity(15);
                     prescription.setPrescriptionID("D464853");
-                    prescription.getPrescriptionCount();
                     prescription.setPrescription(true);
                     break;
                 case "Adderall XR":
