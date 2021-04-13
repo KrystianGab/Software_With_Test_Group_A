@@ -4,16 +4,20 @@ pipeline{
 	stages { 
 		stage("Build") {
 			steps {
-			  	bat "mvn -v"
-			  	bat "mvn clean"
-			  	bat "mvn compile"
-				echo 'Building'
+				timeout(time: 5, unit: 'MINUTES') {
+			  		bat "mvn -v"
+			  		bat "mvn clean"
+			  		bat "mvn compile"
+					echo 'Building'
+				}
 			}
 		}
 		stage("Test") {
 			steps{
-				bat "mvn test"
-				echo 'Testing'
+				timeout(time: 10, unit: 'MINUTES') {
+					bat "mvn test"
+					echo 'Testing'
+				}
 			}
 		}
 	}
