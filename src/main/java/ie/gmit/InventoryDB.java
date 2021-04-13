@@ -8,8 +8,8 @@ public class InventoryDB implements Printable{
     public static Item getInventory(String itemName) {
 
         Item item = null;
-        String[] productInventory = {"Vasaline", "Shampoo", "Glasses"};
-        String[] perscriptionInventory = {"Ventolin", "Adderall XR", "Benzonatate"};
+        String[] productInventory = {"vasaline", "shampoo", "glasses"};
+        String[] perscriptionInventory = {"ventolin", "adderall xr", "benzonatate"};
 
         ArrayList<String> productsList = new ArrayList<>();
         ArrayList<String> perscriptionList = new ArrayList<>();
@@ -20,21 +20,21 @@ public class InventoryDB implements Printable{
         if(productsList.contains(itemName)){
             Products product = new Products();
             switch (itemName) {
-                case "Vasaline":
+                case "vasaline":
                     product.setName(itemName);
                     product.setPrice(2.50);
                     product.setQuantity(50);
                     product.setProductID("P000125");
                     product.setProductShelf("A01");
                     break;
-                case "Shampoo":
+                case "shampoo":
                     product.setName(itemName);
                     product.setPrice(5.00);
                     product.setQuantity(42);
                     product.setProductID("P456123");
                     product.setProductShelf("B03");
                     break;
-                case "Glasses":
+                case "glasses":
                     product.setName(itemName);
                     product.setPrice(21.99);
                     product.setQuantity(15);
@@ -47,21 +47,21 @@ public class InventoryDB implements Printable{
         } else if(perscriptionList.contains(itemName)) {
             Prescription prescription = new Prescription();
             switch (itemName) {
-                case "Ventolin":
+                case "ventolin":
                     prescription.setName(itemName);
                     prescription.setPrice(4.75);
                     prescription.setQuantity(15);
                     prescription.setPrescriptionID("D464853");
                     prescription.setPrescription(true);
                     break;
-                case "Adderall XR":
+                case "adderall xr":
                     prescription.setName(itemName);
                     prescription.setPrice(184.00);
                     prescription.setQuantity(500);
                     prescription.setPrescriptionID("D114875");
                     prescription.setPrescription(true);
                     break;
-                case "Benzonatate":
+                case "benzonatate":
                     prescription.setName(itemName);
                     prescription.setPrice(21.60);
                     prescription.setQuantity(457);

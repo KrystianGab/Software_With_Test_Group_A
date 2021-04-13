@@ -188,7 +188,7 @@ public class ConsoleFrame extends JFrame {
     private void returnInventory() {
         String itemName = textField1.getText();
         try {
-            Printable printable = InventoryDB.getInventory(itemName);
+            Printable printable = InventoryDB.getInventory(itemName.toLowerCase());
             textField1.setText(printable.toString());
         }
         catch(Exception e) {

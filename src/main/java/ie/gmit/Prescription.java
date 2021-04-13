@@ -43,6 +43,6 @@ public class Prescription extends Item implements Printable {
 
     @Override
     public String toString() {
-        return "Item ID:" + prescriptionID + " " + super.toString();
+        return "Item ID:" + prescriptionID + " " + super.toString() + " please pick up at counter";
     }
 }
